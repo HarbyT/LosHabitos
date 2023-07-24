@@ -1,0 +1,88 @@
+body {
+    font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+    background-color: #f5f0e1;
+    color: #3b3121;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+h1 {
+    color: #3b3121;
+    text-align: center;
+    border-bottom: 1px solid #3b3121;
+    padding: 20px;
+}
+
+#topics-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background: #3b3121;
+    color: #f5f0e1;
+}
+
+#topics-list li {
+    display: block;
+    padding: 10px;
+    border-bottom: 1px solid #f5f0e1;
+}
+
+#topics-list li a {
+    color: #f5f0e1;
+    text-decoration: none;
+}
+
+.scroll-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 2em;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+#down-button {
+    margin-top: 20px;
+}
+
+section {
+    margin: 20px;
+    padding: 20px;
+}
+
+section img {
+    max-width: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+section img:hover {
+    transform: scale(1.05);
+}
+
+section p {
+    text-align: justify;
+}
+
+a {
+    color: #3b3121;
+}
+
+a:hover {
+    color: #817567;
+}
+
+/* Estilos para pantallas más grandes */
+@media (min-width: 600px) {
+    #topics-list li {
+        display: inline;
+        border-bottom: none;
+        margin-right: 10px;
+    }
+
+    section {
+        margin: 20px auto;
+        max-width: 600px;
+    }
+}
